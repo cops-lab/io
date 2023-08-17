@@ -15,10 +15,10 @@
  */
 package dev.c0ps.io;
 
-import javax.inject.Inject;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import jakarta.inject.Inject;
 
 public class JsonUtilsImpl implements JsonUtils {
 

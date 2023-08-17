@@ -25,14 +25,14 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 public class IoUtilsImpl implements IoUtils {
 
