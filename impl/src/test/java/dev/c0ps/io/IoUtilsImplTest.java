@@ -117,7 +117,7 @@ public class IoUtilsImplTest {
         var cause = e.getCause();
         // handled differently in different JDKs, Windows works completely differently
         if (!SystemUtils.IS_OS_WINDOWS) {
-            assertErrorType(cause, FileNotFoundException.class);
+            assertErrorType(cause, AccessDeniedException.class, FileSystemException.class);
             assertTrue(cause.getMessage().startsWith(f.getAbsolutePath()));
         }
     }
@@ -163,7 +163,7 @@ public class IoUtilsImplTest {
         });
         assertNotNull(e.getCause());
         var cause = e.getCause();
-        assertEquals(FileNotFoundException.class, cause.getClass());
+        assertEquals(NoSuchFileException.class, cause.getClass());
         assertTrue(cause.getMessage().startsWith(f.getAbsolutePath()));
     }
 
@@ -175,7 +175,7 @@ public class IoUtilsImplTest {
         });
         assertNotNull(e.getCause());
         var cause = e.getCause();
-        assertEquals(FileNotFoundException.class, cause.getClass());
+        assertEquals(NoSuchFileException.class, cause.getClass());
         assertTrue(cause.getMessage().startsWith(f.getAbsolutePath()));
     }
 
