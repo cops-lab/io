@@ -3,7 +3,7 @@
     <parent>
         <groupId>dev.c0ps.io</groupId>
         <artifactId>root</artifactId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.2</version>
     </parent>
     <artifactId>impl</artifactId>
 
@@ -11,7 +11,7 @@
         <dependency>
             <groupId>dev.c0ps.io</groupId>
             <artifactId>api</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.0.2</version>
         </dependency>
         <dependency>
             <groupId>jakarta.inject</groupId>
